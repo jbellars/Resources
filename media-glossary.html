@@ -1,0 +1,487 @@
+<html>
+<head>
+<style type="text/css">
+	body {
+		font-family: Times, Georgia, Calibri;
+		font-size:1em;
+	}
+	legend {
+		font-weight:bold;
+	}
+	dt {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<fieldset>
+<legend>Glossary of Video Processing Terms and Acronyms</legend>
+<dl>
+<dt>4:2:0 (sampling) </dt><dd>Sampling method: chrominance components have half the horizontal and vertical resolution of luminance component (HAVCS/HAMVC)</dd>
+<dt>4:2:2 (sampling) </dt><dd>Sampling method: chrominance components have half the horizontal resolution of luminance component (HAVCS/HAMVC)</dd>
+<dt>4:4:4 (sampling) </dt><dd>Sampling method: chrominance components have same resolution as luminance component  (HAVCS/HAMVC)</dd>
+<dt>AC transform coefficient </dt><dd>Any transform coefficient for which the frequency index in one or both dimensions is non-zero. (ITU)</dd>
+<dt>access unit </dt><dd>Complete coded frame or field (HAVCS)</dd>
+<dt>access unit </dt><dd>A set of NAL units that are consecutive in decoding order and contain exactly one primary coded picture. In addition to the primary coded picture, an access unit may also contain one or more redundant coded pictures, one auxiliary coded picture, or other NAL units not containing slices or slice data partitions of a coded picture. The decoding of an access unit always results in a decoded picture. (ITU)</dd>
+<dt>Access Unit (AU) </dt><dd>An individually accessible portion of the coded representation of an audiovisual object within an elementary stream. See also Subclause 7.2.3. (ISO-1 Final Draft)</dd>
+<dt>adaptive binary arithmetic decoding process </dt><dd>An entropy decoding process that derives the values of bins from a bitstream produced by an adaptive binary arithmetic encoding process. (ITU)</dd>
+<dt>adaptive binary arithmetic encoding process </dt><dd>An entropy encoding process, not normatively specified in this Recommendation | International Standard, that codes a sequence of bins and produces a bitstream that can be decoded using the adaptive binary arithmetic decoding process. (ITU)</dd>
+<dt>alpha blending </dt><dd>A process not specified by this Recommendation | International Standard, in which an auxiliary coded picture is used in combination with a primary coded picture and with other data not specified by this Recommendation | International Standard in the display process. In an alpha blending process, the samples of an auxiliary coded picture are interpreted as indications of the degree of opacity (or, equivalently, the degrees of transparency) associated with the corresponding luma samples of the primary coded picture. (ITU)</dd>
+<dt>Alpha Map  </dt><dd>The representation of the transparency parameters associated to a texture map. (ISO-1 Final Draft)</dd>
+<dt>arbitrary slice order (ASO) </dt><dd>A decoding order of slices in which the macroblock address of the first macroblock of some slice of a slice group may be less than the macroblock address of the first macroblock of some other preceding slice of the same slice group or, in the case of a picture that is coded using three separate colour planes, some other preceding slice of the same slice group within the same colour plane, or in which the slices of a slice group of a picture may be interleaved with the slices of one or more other slice groups of the picture or, in the case of a picture that is coded using three separate colour planes, with the slices of one or more other slice groups within the same colour plane. (ITU)</dd>
+<dt>arithmetic coding </dt><dd>Coding method to reduce redundancy (HAVCS/HAMVC)</dd>
+<dt>artefact </dt><dd>Visual distortion in an image (HAVCS/HAMVC)</dd>
+<dt>ASO </dt><dd>Arbitrary Slice Order, in which slices may be coded out of raster sequence (HAVCS/HAMVC)</dd>
+<dt>AU</dt><dd>Access Unit </dd>
+<dt>Audiovisual Scene (AV Scene) </dt><dd>A set of media objects together with scene description information that defines their spatial and temporal attributes including behavior resulting from object and user interaction. (ISO-1 Final Draft)</dd>
+<dt>auxiliary coded picture </dt><dd>A picture that supplements the primary coded picture that may be used in combination with other data not specified by this Recommendation | International Standard in the display process. An auxiliary coded picture has the same syntactic and semantic restrictions as a monochrome redundant coded picture. An auxiliary coded picture must contain the same number of macroblocks as the primary coded picture. Auxiliary coded pictures have no normative effect on the decoding process. See also primary coded picture and redundant coded picture. (ITU)</dd>
+<dt>B slice </dt><dd>Coded slice predicted using bidirectional motion compensation (HAVCS)</dd>
+<dt>B slice </dt><dd>A slice that may be decoded using intra prediction or inter prediction using at most two motion vectors and reference indices to predict the sample values of each block. (ITU)</dd>
+<dt>BAB </dt><dd>Binary Alpha Block, indicates the boundaries of a region (MPEG-4 Visual) (HAMVC)</dd>
+<dt>BAP </dt><dd>Body Animation Parameters (HAMVC)</dd>
+<dt>BIFS</dt><dd>Binary Format for Scenes (MPEG-4/PPT)</dd>
+<dt>bin </dt><dd>One bit of a bin string. (ITU)</dd>
+<dt>bin string </dt><dd>A string of bins. A bin string is an intermediate binary representation of values of syntax elements from the binarization of the syntax element. (ITU)</dd>
+<dt>binarization </dt><dd>A set of bin strings for all possible values of a syntax element. (ITU)</dd>
+<dt>binarization process </dt><dd>A unique mapping process of all possible values of a syntax element onto a set of bin strings. (ITU)</dd>
+<dt>bi-predictive slice </dt><dd>See B slice. (ITU)</dd>
+<dt>bitstream </dt><dd>A sequence of bits that forms the representation of coded pictures and associated data forming one or more coded video sequences. Bitstream is a collective term used to refer either to a NAL unit stream or a byte stream. (ITU)</dd>
+<dt>Block </dt><dd>Region of macroblock (8 × 8 or 4 × 4) for transform purposes (HAVCS/HAMVC)</dd>
+<dt>block </dt><dd>An MxN (M-column by N-row) array of samples, or an MxN array of transform coefficients. (ITU)</dd>
+<dt>block matching </dt><dd>Motion estimation carried out on rectangular picture areas (HAVCS/HAMVC)</dd>
+<dt>blocking </dt><dd>Square or rectangular distortion areas in an image (HAVCS/HAMVC)</dd>
+<dt>bottom field </dt><dd>One of two fields that comprise a frame. Each row of a bottom field is spatially located immediately below a corresponding row of a top field. (ITU)</dd>
+<dt>bottom macroblock (of a macroblock pair) </dt><dd>The macroblock within a macroblock pair that contains the samples in the bottom row of samples for the macroblock pair. For a field macroblock pair, the bottom macroblock represents the samples from the region of the bottom field of the frame that lie within the spatial region of the macroblock pair. For a frame macroblock pair, the bottom macroblock represents the samples of the frame that lie within the bottom half of the spatial region of the macroblock pair. (ITU)</dd>
+<dt>Box </dt><dd>An object-oriented building block defined by a unique type identifier and length (called ‘atom’ in some specifications, including the first definition of MP4). (ISO-12)</dd>
+<dt>B-picture (slice) </dt><dd>Coded picture (slice) predicted using bidirectional motion compensation (HAMVC)</dd>
+<dt>broken link </dt><dd>A location in a bitstream at which it is indicated that some subsequent pictures in decoding order may contain serious visual artefacts due to unspecified operations performed in the generation of the bitstream. (ITU)</dd>
+<dt>Buffer Model </dt><dd>A model that defines how a terminal complying with this specification manages the buffer resources that are needed to decode a session. (ISO-1 Final Draft)</dd>
+<dt>byte </dt><dd>A sequence of 8 bits, written and read with the most significant bit on the left and the least significant bit on the right. When represented in a sequence of data bits, the most significant bit of a byte is first. (ITU)</dd>
+<dt>Byte Aligned </dt><dd>A position in a coded bit stream with a distance of a multiple of 8-bits from the first bit in the stream. (ISO-1 Final Draft)</dd>
+<dt>byte stream </dt><dd>An encapsulation of a NAL unit stream containing start code prefixes and NAL units as specified in Annex B. (ITU)</dd>
+<dt>byte-aligned </dt><dd>A position in a bitstream is byte-aligned when the position is an integer multiple of 8 bits from the position of the first bit in the bitstream. A bit or byte or syntax element is said to be byte-aligned when the position at which it appears in a bitstream is byte-aligned. (ITU)</dd>
+<dt>CABAC </dt><dd>Context-based Adaptive Binary Arithmetic Coding (HAVCS/HAMVC/ITU)</dd>
+<dt>CAE </dt><dd>Context-based Arithmetic Encoding (HAMVC)</dd>
+<dt>can </dt><dd>A term used to refer to behaviour that is allowed, but not necessarily required. (ITU)</dd>
+<dt>category </dt><dd>A number associated with each syntax element. The category is used to specify the allocation of syntax elements to NAL units for slice data partitioning. It may also be used in a manner determined by the application to refer to classes of syntax elements in a manner not specified in this Recommendation | International Standard. (ITU)</dd>
+<dt>CAVLC </dt><dd>Context Adaptive Variable Length Coding (HAVCS/HAMVC)</dd>
+<dt>CAVLC </dt><dd>Context-based Adaptive Variable Length Coding (ITU)</dd>
+<dt>CBR </dt><dd>Constant Bit Rate (ITU)</dd>
+<dt>chroma </dt><dd>An adjective specifying that a sample array or single sample is representing one of the two colour difference signals related to the primary colours. The symbols used for a chroma array or sample are Cb and Cr. NOTE – The term chroma is used rather than the term chrominance in order to avoid the implication of the use of linear light transfer characteristics that is often associated with the term chrominance. (ITU)</dd>
+<dt>chrominance or chroma </dt><dd>Colour difference component (HAVCS/HAMVC)</dd>
+<dt>Chunk </dt><dd>A contiguous set of samples for one track. (ISO-12)</dd>
+<dt>CIF </dt><dd>Common Intermediate Format, a colour image format (HAVCS/HAMVC)</dd>
+<dt>Clock Reference </dt><dd>A special timestamp that conveys a reading of a time base.  (ISO-1 Final Draft)</dd>
+<dt>CODEC </dt><dd>COder / DECoder pair (HAVCS/HAMVC)</dd>
+<dt>coded field </dt><dd>A coded representation of a field. (ITU)</dd>
+<dt>coded frame </dt><dd>A coded representation of a frame. (ITU)</dd>
+<dt>coded picture </dt><dd>A coded representation of a picture. A coded picture may be either a coded field or a coded frame. Coded picture is a collective term referring to a primary coded picture or a redundant coded picture, but not to both together. (ITU)</dd>
+<dt>Coded Picture Buffer (CPB) </dt><dd>Buffer containing coded frames or fields (HAVCS)</dd>
+<dt>coded picture buffer (CPB) </dt><dd>A first-in first-out buffer containing access units in decoding order specified in the hypothetical reference decoder in Annex C. (ITU)</dd>
+<dt>coded representation </dt><dd>A data element as represented in its coded form. (ITU)</dd>
+<dt>coded slice data partition NAL unit </dt><dd>A NAL unit containing a slice data partition. (ITU)</dd>
+<dt>coded slice NAL unit </dt><dd>A NAL unit containing a slice that is not a slice of an auxiliary coded picture. (ITU)</dd>
+<dt>coded video sequence </dt><dd>A sequence of access units that consists, in decoding order, of an IDR access unit followed by zero or more non-IDR access units including all subsequent access units up to but not including any subsequent IDR access unit. (ITU)</dd>
+<dt>colour space </dt><dd>Method of representing colour images (HAMVC/HAVCS)</dd>
+<dt>complementary field pair </dt><dd>A collective term for a complementary reference field pair or a complementary non-reference field pair. (ITU)</dd>
+<dt>complementary non-reference field pair </dt><dd>Two non-reference fields that are in consecutive access units in decoding order as two coded fields of opposite parity and share the same value of the frame_num syntax element, where the first field is not already a paired field. (ITU)</dd>
+<dt>complementary reference field pair </dt><dd>Two reference fields that are in consecutive access units in decoding order as two coded fields and share the same value of the frame_num syntax element, where the second field in decoding order is not an IDR picture and does not include a memory_management_control_operation syntax element equal to 5. (ITU)</dd>
+<dt>component </dt><dd>An array or single sample from one of the three arrays (luma and two chroma) that make up a field or frame in 4:2:0, 4:2:2, or 4:4:4 colour format or the array or a single sample of the array that make up a field or frame in monochrome format. (ITU)</dd>
+<dt>Composition </dt><dd>The process of applying scene description information in order to identify the spatio-temporal attributes of media objects. (ISO-1 Final Draft)</dd>
+<dt>Composition Memory (CM) </dt><dd>A random access memory that contains composition units. See also Subclause 7.2.9. (ISO-1 Final Draft)</dd>
+<dt>Composition Time Stamp (CTS) </dt><dd>An indication of the nominal composition time of a composition unit. See also Subclause 7.3.5. (ISO-1 Final Draft)</dd>
+<dt>Composition Unit (CU) </dt><dd>An individually accessible portion of the output that a media object decoder produces from access units. See also Subclause 7.2.8. (ISO-1 Final Draft)</dd>
+<dt>Compression Layer </dt><dd>The layer of an ISO/IEC FCD 14496 system that translates between the coded representation of an elementary stream and its decoded representation. It incorporates the media object decoders. (ISO-1 Final Draft)</dd>
+<dt>Container Box </dt><dd>A box whose sole purpose is to contain and group a set of related boxes. (ISO-12)</dd>
+<dt>context variable </dt><dd>A variable specified for the adaptive binary arithmetic decoding process of a bin by an equation containing recently decoded bins. (ITU)</dd>
+<dt>CPB </dt><dd>Coded Picture Buffer (ITU)</dd>
+<dt>DAI </dt><dd>DMIF Application Interface (MPEG-4/PPT)</dd>
+<dt>DC transform coefficient </dt><dd>A transform coefficient for which the frequency index is zero in all dimensions. (ITU)</dd>
+<dt>DCT </dt><dd>Discrete Cosine Transform (UHD/VLSI)</dd>
+<dt>DCT </dt><dd>Discrete Cosine Transform, a mathematical transform and/or its practical approximation(s) (HAVCS/HAMVC)</dd>
+<dt>decoded picture </dt><dd>A decoded picture is derived by decoding a coded picture. A decoded picture is either a decoded frame, or a decoded field. A decoded field is either a decoded top field or a decoded bottom field. (ITU)</dd>
+<dt>decoded picture buffer (DPB) </dt><dd>A buffer holding decoded pictures for reference, output reordering, or output delay specified for the hypothetical reference decoder in Annex C. (ITU)</dd>
+<dt>decoder </dt><dd>An embodiment of a decoding process. (ITU)</dd>
+<dt>Decoder configuration </dt><dd>The configuration of a media object decoder for processing its elementary stream data by using information contained in its elementary stream descriptor. (ISO-1 Final Draft)</dd>
+<dt>decoder under test (DUT) </dt><dd>A decoder that is tested for conformance to this Recommendation | International Standard by operating the hypothetical stream scheduler to deliver a conforming bitstream to the decoder and to the hypothetical reference decoder and comparing the values and timing of the output of the two decoders. (ITU)</dd>
+<dt>Decoding buffer (DB) </dt><dd>A buffer at the input of a media object decoder that contains access units . See also Subclause 7.2.4. (ISO-1 Final Draft)</dd>
+<dt>decoding order </dt><dd>The order in which syntax elements are processed by the decoding process. (ITU)</dd>
+<dt>decoding process </dt><dd>The process specified in this Recommendation | International Standard that reads a bitstream and derives decoded pictures from it. (ITU)</dd>
+<dt>Decoding Time Stamp (DTS) </dt><dd>An indication of the nominal decoding time of an access unit. See also Subclause 7.3.4. (ISO-1 Final Draft)</dd>
+<dt>Descriptor </dt><dd>A data structure that is used to describe particular aspects of an elementary stream or a coded media object. (ISO-1 Final Draft)</dd>
+<dt>direct prediction </dt><dd>A coding mode in which no motion vector is transmitted (HAVCS/HAMVC)</dd>
+<dt>direct prediction </dt><dd>An inter prediction for a block for which no motion vector is decoded. Two direct prediction modes are specified that are referred to as spatial direct prediction and temporal prediction mode. (ITU)</dd>
+<dt>display process </dt><dd>A process not specified in this Recommendation | International Standard having, as its input, the cropped decoded pictures that are the output of the decoding process. (ITU)</dd>
+<dt>DMIF</dt><dd>Delivery Multimedia Integration Framework (MPEG-4/PPT)</dd>
+<dt>DPB </dt><dd>Decoded Picture Buffer (ITU)</dd>
+<dt>DPCM </dt><dd>Differential Pulse Code Modulation (HAVCS/HAMVC)</dd>
+<dt>DSCQS </dt><dd>Double Stimulus Continuous Quality Scale, a scale and method for subjective quality measurement (HAVCS/HAMVC)</dd>
+<dt>DUT </dt><dd>Decoder under test (ITU)</dd>
+<dt>DWT </dt><dd>Discrete Wavelet Transform (HAVCS/HAMVC)</dd>
+<dt>Elementary Stream (ES) </dt><dd>A consecutive flow of data from a single source entity to a single destination entity on the compression layer. See also Subclause 7.2.5. (ISO-1 Final Draft)</dd>
+<dt>Elementary Stream Descriptor </dt><dd>A structure contained in object descriptors that describes the encoding format, initialization information, transport channel identification, and other descriptive information about the content carried in an elementary stream. See also 9.3.3. (ISO-1 Final Draft)</dd>
+<dt>Elementary Stream Interface (ESI) </dt><dd>An interface modeling the exchange of elementary stream data and associated control information between the compression layer and the sync layer. See also Subclause 7.2.6. (ISO-1 Final Draft)</dd>
+<dt>emulation prevention byte </dt><dd>A byte equal to 0x03 that may be present within a NAL unit. The presence of emulation prevention bytes ensures that no sequence of consecutive byte-aligned bytes in the NAL unit contains a start code prefix. (ITU)</dd>
+<dt>encoder </dt><dd>An embodiment of an encoding process. (ITU)</dd>
+<dt>encoding process </dt><dd>A process, not specified in this Recommendation | International Standard, that produces a bitstream conforming to this Recommendation | International Standard. (ITU)</dd>
+<dt>entropy coding </dt><dd>Coding method to reduce redundancy (HAVCS/HAMVC)</dd>
+<dt>error concealment </dt><dd>Post-processing of a decoded image to remove or reduce visible error effects (HAVCS/HAMVC)</dd>
+<dt>ES(s)</dt><dd>Elementary Stream(s) (MPEG-4/PPT)</dd>
+<dt>ESD</dt><dd>Elementary Stream Descriptor </dd>
+<dt>Exp-Golomb or ExpG </dt><dd>Exponential Golomb variable length codes (HAVCS/HAMVC)</dd>
+<dt>FAP </dt><dd>Facial Animation Parameters (HAMVC)</dd>
+<dt>FBA </dt><dd>Face and Body Animation (HAMVC)</dd>
+<dt>FD</dt><dd>Fine Decision (UHD/VLSI)</dd>
+<dt>FDMS</dt><dd>Fine Decision Module Sharing (UHD/VLSI)</dd>
+<dt>FGS </dt><dd>Fine Granular Scalability (HAMVC)</dd>
+<dt>field </dt><dd>Odd- or even-numbered lines from an interlaced video sequence (HAVCS/HAMVC)</dd>
+<dt>field </dt><dd>An assembly of alternate rows of a frame. A frame is composed of two fields, a top field and a bottom field. (ITU)</dd>
+<dt>field macroblock </dt><dd>A macroblock containing samples from a single field. All macroblocks of a coded field are field macroblocks. When macroblock-adaptive frame/field decoding is in use, some macroblocks of a coded frame may be field macroblocks. (ITU)</dd>
+<dt>field macroblock pair </dt><dd>A macroblock pair decoded as two field macroblocks. (ITU)</dd>
+<dt>field scan </dt><dd>A specific sequential ordering of transform coefficients that differs from the zig-zag scan by scanning columns more rapidly than rows. Field scan is used for transform coefficients in field macroblocks. (ITU)</dd>
+<dt>FIFO </dt><dd>First-In, First-Out (ITU)</dd>
+<dt>flag </dt><dd>A variable that can take one of the two possible values 0 and 1. (ITU)</dd>
+<dt>FlexMux Channel (FMC) </dt><dd>A label to differentiate between data belonging to different constituent streams within one FlexMux Stream. A sequence of data within a FlexMux stream that corresponds to one single SL-packetized stream. (ISO-1 Final Draft)</dd>
+<dt>FlexMux Packet </dt><dd>The smallest data entity managed by the FlexMux tool consisting of a header and a payload. (ISO-1 Final Draft)</dd>
+<dt>FlexMux Stream </dt><dd>A sequence of FlexMux Packets with data from one or more SL-packetized streams that are each identified by their own FlexMux channel. (ISO-1 Final Draft)</dd>
+<dt>FlexMux tool </dt><dd>A tool that allows the interleaving of data from multiple data streams. (ISO-1 Final Draft)</dd>
+<dt>flowgraph </dt><dd>Pictorial representation of a transform algorithm (or the algorithm itself) (HAMVC)</dd>
+<dt>FMO </dt><dd>Flexible Macroblock Order, in which macroblocks may be coded out of raster sequence (HAVCS/HAMVC)</dd>
+<dt>frame </dt><dd>A frame contains an array of luma samples in monochrome format or an array of luma samples and two corresponding arrays of chroma samples in 4:2:0, 4:2:2, and 4:4:4 colour format. A frame consists of two fields, a top field and a bottom field. (ITU)</dd>
+<dt>frame macroblock </dt><dd>A macroblock representing samples from the two fields of a coded frame. When macroblock-adaptive frame/field decoding is not in use, all macroblocks of a coded frame are frame macroblocks. When macroblock-adaptive frame/field decoding is in use, some macroblocks of a coded frame may be frame macroblocks. (ITU)</dd>
+<dt>frame macroblock pair </dt><dd>A macroblock pair decoded as two frame macroblocks. (ITU)</dd>
+<dt>ftyp</dt><dd>File Type (ISO-14)</dd>
+<dt>frequency index </dt><dd>A one-dimensional or two-dimensional index associated with a transform coefficient prior to an inverse transform part of the decoding process. (ITU)</dd>
+<dt>Full Search </dt><dd>A motion estimation algorithm (HAVCS/HAMVC)</dd>
+<dt>Fully Configurable Video Coding </dt><dd>A framework for video coding in which a codec may be completely re-configured during a communication session (HAVCS)</dd>
+<dt>GMC </dt><dd>Global Motion Compensation, motion compensation applied to a complete coded object (MPEG-4 Visual) (HAMVC)</dd>
+<dt>GOP </dt><dd>Group of Pictures, a set of coded video images (HAVCS/HAMVC)</dd>
+<dt>Graphics Combination Profile </dt><dd>A combination profile that describes the required capabilities of a terminal for processing graphical media objects. (ISO-1 Final Draft)</dd>
+<dt>H.261 </dt><dd>A video coding standard (HAVCS/HAMVC)</dd>
+<dt>H.263 </dt><dd>A video coding standard (HAVCS/HAMVC)</dd>
+<dt>H.264 </dt><dd>A video coding standard (HAVCS/HAMVC)</dd>
+<dt>HDTV </dt><dd>High Definition Television (HAVCS/HAMVC)</dd>
+<dt>Hint Track </dt><dd>A special track which does not contain media data. Instead it contains instructions for packaging one or more tracks into a streaming channel. (ISO-12)</dd>
+<dt>Hinter </dt><dd>A tool that is run on a file containing only media, to add one or more hint tracks to the file and so facilitate streaming. (ISO-12)</dd>
+<dt>HR</dt><dd>Hardware Reuse (UHD/VLSI)</dd>
+<dt>HRD </dt><dd>Hypothetical Reference Decoder (ITU)</dd>
+<dt>HSS </dt><dd>Hypothetical Stream Scheduler (ITU)</dd>
+<dt>HT</dt><dd>Hadamard Transform (UHD/VLSI)</dd>
+<dt>Huffman coding </dt><dd>Coding method to reduce redundancy (HAVCS/HAMVC)</dd>
+<dt>HVS </dt><dd>Human Visual System, the system by which humans perceive and interpret visual images (HAVCS/HAMVC)</dd>
+<dt>hybrid (CODEC) </dt><dd>CODEC model featuring motion compensation and transform (HAVCS/HAMVC)</dd>
+<dt>Hypothetical Reference Decoder (HRD) </dt><dd>Decoder ‘model’ that may be used to test bitstream conformance (HAVCS)</dd>
+<dt>hypothetical reference decoder (HRD) </dt><dd>A hypothetical decoder model that specifies constraints on the variability of conforming NAL unit streams or conforming byte streams that an encoding process may produce. (ITU)</dd>
+<dt>hypothetical stream scheduler (HSS) </dt><dd>A hypothetical delivery mechanism for the timing and data flow of the input of a bitstream into the hypothetical reference decoder. The HSS is used for checking the conformance of a bitstream or a decoder. (ITU)</dd>
+<dt>I slice </dt><dd>Slice coded without reference to any other frame (HAVCS)</dd>
+<dt>I slice </dt><dd>A slice that is not an SI slice that is decoded using intra prediction only. (ITU)</dd>
+<dt>IBR</dt><dd>Interlaced Block Reordering (UHD/VLSI)</dd>
+<dt>IDCT</dt><dd>Integer Discrete Cosine Transform (UHD/VLSI)</dd>
+<dt>IDR </dt><dd>Instantaneous Decoding Refresh (ITU)</dd>
+<dt>IEC </dt><dd>International Electrotechnical Commission, a standards body (HAVCS/HAMVC)</dd>
+<dt>informative </dt><dd>A term used to refer to content provided in this Recommendation | International Standard that is not an integral part of this Recommendation | International Standard. Informative content does not establish any mandatory requirements for conformance to this Recommendation | International Standard. (ITU)</dd>
+<dt>Initial Object Descriptor </dt><dd>A special object descriptor that allows the receiving terminal to gain access to portions of content encoded according to this specification. (ISO-1 Final Draft)</dd>
+<dt>instantaneous decoding refresh (IDR) access unit </dt><dd>An access unit in which the primary coded picture is an IDR picture. (ITU)</dd>
+<dt>instantaneous decoding refresh (IDR) picture </dt><dd>A coded picture for which the variable IdrPicFlag is equal to 1. An IDR picture causes the decoding process to mark all reference pictures as "unused for reference" immediately after the decoding of the IDR picture. All coded pictures that follow an IDR picture in decoding order can be decoded without inter prediction from any picture that precedes the IDR picture in decoding order. The first picture of each coded video sequence in decoding order is an IDR picture. (ITU)</dd>
+<dt>Intellectual Property Identification (IPI) </dt><dd>A unique identification of one or more elementary streams corresponding to parts of one or more media objects. (ISO-1 Final Draft)</dd>
+<dt>Inter </dt><dd>A mode for coding parameters that uses previously coded parameters to construct a prediction. (ISO-1 Final Draft)</dd>
+<dt>inter (coding) </dt><dd>Coding of video frames using temporal prediction or compensation (HAVCS/HAMVC)</dd>
+<dt>inter coding </dt><dd>Coding of a block, macroblock, slice, or picture that uses inter prediction. (ITU)</dd>
+<dt>inter prediction </dt><dd>A prediction derived from decoded samples of reference pictures other than the current decoded picture. (ITU)</dd>
+<dt>interlaced (video) </dt><dd>Video data represented as a series of fields (HAVCS/HAMVC)</dd>
+<dt>interpretation sample value </dt><dd>A possibly-altered value corresponding to a decoded sample value of an auxiliary coded picture that may be generated for use in the display process. Interpretation sample values are not used in the decoding process and have no normative effect on the decoding process. (ITU)</dd>
+<dt>Intra </dt><dd>A mode for coding parameters that does not make reference to previously coded parameters to perform the encoding. (ISO-1 Final Draft)</dd>
+<dt>intra (coding) </dt><dd>Coding of video frames without temporal prediction (HAVCS/HAMVC)</dd>
+<dt>intra coding </dt><dd>Coding of a block, macroblock, slice, or picture that uses intra prediction. (ITU)</dd>
+<dt>intra prediction </dt><dd>A prediction derived from the decoded samples of the same decoded slice. (ITU)</dd>
+<dt>intra slice </dt><dd>See I slice. (ITU)</dd>
+<dt>inverse transform </dt><dd>A part of the decoding process by which a set of transform coefficients are converted into spatial-domain values, or by which a set of transform coefficients are converted into DC transform coefficients. (ITU)</dd>
+<dt>IOD</dt><dd>Initial Object Descriptor (ISO-14)</dd>
+<dt>I-picture (slice) </dt><dd>Picture (or slice) coded without reference to any other frame (HAMVC)</dd>
+<dt>IPMP</dt><dd>Intellectual Property Management & Protection (MPEG-4/PPT)</dd>
+<dt>ISO </dt><dd>International Standards Organisation, a standards body (HAVCS)</dd>
+<dt>ISO Base Media File </dt><dd>The name of the file format described in this specification. (ISO-12)</dd>
+<dt>ISO International </dt><dd>Standards Organisation, a standards body (HAMVC)</dd>
+<dt>ITU </dt><dd>International Telecommunication Union, a standards body (HAVCS/HAMVC)</dd>
+<dt>JPEG </dt><dd>Joint Photographic Experts Group, a committee of ISO (also an image coding standard) (HAVCS/HAMVC)</dd>
+<dt>JPEG2000 </dt><dd>An image coding standard  (HAMVC)</dd>
+<dt>KF</dt><dd>Key Frame </dd>
+<dt>latency </dt><dd>Delay through a communication system (HAVCS/HAMVC)</dd>
+<dt>layer </dt><dd>One of a set of syntactical structures in a non-branching hierarchical relationship. Higher layers contain lower layers. The coding layers are the coded video sequence, picture, slice, and macroblock layers. (ITU)</dd>
+<dt>Level </dt><dd>A set of conformance parameters (applied to a Profile) (HAVCS/HAMVC)</dd>
+<dt>level </dt><dd>A defined set of constraints on the values that may be taken by the syntax elements and variables of this Recommendation | International Standard. The same set of levels is defined for all profiles, with most aspects of the definition of each level being in common across different profiles. Individual implementations may, within specified constraints, support a different level for each supported profile. In a different context, level is the value of a transform coefficient prior to scaling. (ITU)</dd>
+<dt>list 0 (list 1) motion vector </dt><dd>A motion vector associated with a reference index pointing into reference picture list 0 (list 1). (ITU)</dd>
+<dt>list 0 (list 1) prediction </dt><dd>Inter prediction of the content of a slice using a reference index pointing into reference picture list 0 (list 1). (ITU)</dd>
+<dt>L-MB</dt><dd>Left Macroblock (UHD/VLSI)</dd>
+<dt>loop filter </dt><dd>Spatial filter placed within encoding or decoding feedback loop (HAVCS/HAMVC)</dd>
+<dt>LSB </dt><dd>Least Significant Bit (ITU)</dd>
+<dt>luma </dt><dd>An adjective specifying that a sample array or single sample is representing the monochrome signal related to the primary colours. The symbol or subscript used for luma is Y or L. NOTE – The term luma is used rather than the term luminance in order to avoid the implication of the use of linear light transfer characteristics that is often associated with the term luminance. The symbol L is sometimes used instead of the symbol Y to avoid confusion with the symbol y as used for vertical location. (ITU)</dd>
+<dt>luminance or luma </dt><dd>Monochrome or brightness component (HAVCS)</dd>
+<dt>Macroblock </dt><dd>Region of frame coded as a unit (usually 16 × 16 pixels in the original frame) (HAVCS/HAMVC)</dd>
+<dt>macroblock </dt><dd>A 16x16 block of luma samples and two corresponding blocks of chroma samples of a picture that has three sample arrays, or a 16x16 block of samples of a monochrome picture or a picture that is coded using three separate colour planes. The division of a slice or a macroblock pair into macroblocks is a partitioning. (ITU)</dd>
+<dt>macroblock address </dt><dd>When macroblock-adaptive frame/field decoding is not in use, a macroblock address is the index of a macroblock in a macroblock raster scan of the picture starting with zero for the top-left macroblock in a picture. When macroblock-adaptive frame/field decoding is in use, the macroblock address of the top macroblock of a macroblock pair is two times the index of the macroblock pair in a macroblock pair raster scan of the picture, and the macroblock address of the bottom macroblock of a macroblock pair is the macroblock address of the corresponding top macroblock plus 1. The macroblock address of the top macroblock of each macroblock pair is an even number and the macroblock address of the bottom macroblock of each macroblock pair is an odd number. (ITU)</dd>
+<dt>macroblock location </dt><dd>The two-dimensional coordinates of a macroblock in a picture denoted by ( x, y ). For the top left macroblock of the picture ( x, y ) is equal to ( 0, 0 ). x is incremented by 1 for each macroblock column from left to right. When macroblock-adaptive frame/field decoding is not in use, y is incremented by 1 for each macroblock row from top to bottom. When macroblock-adaptive frame/field decoding is in use, y is incremented by 2 for each macroblock pair row from top to bottom, and is incremented by an additional 1 when a macroblock is a bottom macroblock. (ITU)</dd>
+<dt>macroblock pair </dt><dd>A pair of vertically contiguous macroblocks in a frame that is coupled for use in macroblock-adaptive frame/field decoding. The division of a slice into macroblock pairs is a partitioning. (ITU)</dd>
+<dt>Macroblock partition </dt><dd>Region of macroblock with its own motion vector (H.264)  (HAVCS/HAMVC)</dd>
+<dt>macroblock partition </dt><dd>A block of luma samples and two corresponding blocks of chroma samples resulting from a partitioning of a macroblock for inter prediction for a picture that has three sample arrays or a block of luma samples resulting from a partitioning of a macroblock for inter prediction for a monochrome picture or a picture that is coded using three separate colour planes. (ITU)</dd>
+<dt>Macroblock sub-partition </dt><dd>Region of macroblock with its own motion vector (H.264)  (HAVCS/HAMVC)</dd>
+<dt>macroblock to slice group map </dt><dd>A means of mapping macroblocks of a picture into slice groups. The macroblock to slice group map consists of a list of numbers, one for each coded macroblock, specifying the slice group to which each coded macroblock belongs. (ITU)</dd>
+<dt>macroblock-adaptive frame/field decoding </dt><dd>A decoding process for coded frames in which some macroblocks may be decoded as frame macroblocks and others may be decoded as field macroblocks. (ITU)</dd>
+<dt>map unit to slice group map </dt><dd>A means of mapping slice group map units of a picture into slice groups. The map unit to slice group map consists of a list of numbers, one for each slice group map unit, specifying the slice group to which each coded slice group map unit belongs. (ITU)</dd>
+<dt>may </dt><dd>A term used to refer to behaviour that is allowed, but not necessarily required. In some places where the optional nature of the described behaviour is intended to be emphasized, the phrase "may or may not" is used to provide emphasis. (ITU)</dd>
+<dt>MB</dt><dd>Macroblock (UHD/VLSI/ITU)</dd>
+<dt>MBAFF </dt><dd>Macroblock-Adaptive Frame-Field Coding (ITU)</dd>
+<dt>MD</dt><dd>Mode Decision (UHD/VLSI)</dd>
+<dt>mdat</dt><dd>Media Data (ISO-14)</dd>
+<dt>mdia</dt><dd>Media (ISO-14)</dd>
+<dt>Media Data Box </dt><dd>A container box which can hold the actual media data for a presentation (‘mdat’). (ISO-12)</dd>
+<dt>Media Object </dt><dd>A representation of a natural or synthetic object that can be manifested aurally and/or visually. Each object is associated with zero or more elementary streams using one ore more object descriptors. (ISO-1 Final Draft)</dd>
+<dt>Media Object Decoder </dt><dd>An entity that translates between the coded representation of an elementary stream and its decoded representation. See also Subclause 7.2.7. (ISO-1 Final Draft)</dd>
+<dt>media processor </dt><dd>Processor with features specific to multimedia coding and processing (HAMVC)</dd>
+<dt>mehd</dt><dd>Movie Extends Header (ISO-14)</dd>
+<dt>memory management control operation </dt><dd>Seven operations that control reference picture marking. (ITU)</dd>
+<dt>mfra</dt><dd>Movie Fragment Random Access (ISO-14)</dd>
+<dt>mfro</dt><dd>Movie Fragment Random Access Offset (ISO-14)</dd>
+<dt>moof</dt><dd>Movie Fragment (ISO-14)</dd>
+<dt>moov</dt><dd>Movie Metadata (ISO-14)</dd>
+<dt>moov atom</dt><dd>A data container that contains the index information in the encoded file that the [media] player needs to play the file (MSDB)</dd>
+<dt>motion compensation </dt><dd>Prediction of a video frame with modelling of motion (HAVCS/HAMVC)</dd>
+<dt>motion estimation </dt><dd>Estimation of relative motion between two or more video frames (HAVCS/HAMVC)</dd>
+<dt>motion vector </dt><dd>Vector indicating a displaced block or region to be used for motion compensation (HAVCS/HAMVC)</dd>
+<dt>motion vector </dt><dd>A two-dimensional vector used for inter prediction that provides an offset from the coordinates in the decoded picture to the coordinates in a reference picture. (ITU)</dd>
+<dt>Movie Box </dt><dd>A container box whose sub-boxes define the metadata for a presentation (‘moov’). (ISO-12)</dd>
+<dt>mfhd</dt><dd>Movie Fragment Header (ISO-14)</dd>
+<dt>MP4</dt><dd>MPEG-4 File/Container Format (MPEG-4/PPT)</dd>
+<dt>MPEG </dt><dd>Motion Picture Experts Group, a committee of ISO/IEC (HAVCS/HAMVC)</dd>
+<dt>MPEG-1 </dt><dd>A multimedia coding standard (HAVCS/HAMVC)</dd>
+<dt>MPEG-2 </dt><dd>A multimedia coding standard (HAVCS/HAMVC)</dd>
+<dt>MPEG-4 </dt><dd>A multimedia coding standard (HAVCS/HAMVC)</dd>
+<dt>MPEG-J</dt><dd>Java API in MPEG-4 System (MPEG-4/PPT)</dd>
+<dt>MSB </dt><dd>Most Significant Bit (ITU)</dd>
+<dt>MSDL</dt><dd>MPEG-4 Syntactic Description Language (MPEG-4/PPT)</dd>
+<dt>must </dt><dd>A term used in expressing an observation about a requirement or an implication of a requirement that is specified elsewhere in this Recommendation | International Standard. This term is used exclusively in an informative context. (ITU)</dd>
+<dt>MVC </dt><dd>Multiview Video Coding, in which multiple views of a scene may be jointly coded (HAVCS)</dd>
+<dt>MVC </dt><dd>Multiview Video Coding (ITU)</dd>
+<dt>mvex</dt><dd>Movie Extends (ISO-14)</dd>
+<dt>mvhd</dt><dd>Movie Header (ISO-14)</dd>
+<dt>NAL </dt><dd>Network Abstraction Layer (HAVCS/HAMVC/ITU)</dd>
+<dt>NAL unit </dt><dd>A syntax structure containing an indication of the type of data to follow and bytes containing that data in the form of an RBSP interspersed as necessary with emulation prevention bytes. (ITU)</dd>
+<dt>NAL unit stream </dt><dd>A sequence of NAL units. (ITU)</dd>
+<dt>Native BIFS Node </dt><dd>A BIFS node which is introduced and specified within this Final Committee Draft of International Standard as opposed to non-native BIFS node, which is a node referenced from ISO/IEC 14772-1. (ISO-1 Final Draft)</dd>
+<dt>non-paired field </dt><dd>A collective term for a non-paired reference field or a non-paired non-reference field. (ITU)</dd>
+<dt>non-paired non-reference field </dt><dd>A decoded non-reference field that is not part of a complementary non-reference field pair. (ITU)</dd>
+<dt>non-paired reference field </dt><dd>A decoded reference field that is not part of a complementary reference field pair. (ITU)</dd>
+<dt>non-reference field </dt><dd>A field coded with nal_ref_idc equal to 0. (ITU)</dd>
+<dt>non-reference frame </dt><dd>A frame coded with nal_ref_idc equal to 0. (ITU)</dd>
+<dt>non-reference picture </dt><dd>A picture coded with nal_ref_idc equal to 0. A non-reference picture is not used for inter prediction of any other pictures. (ITU)</dd>
+<dt>note </dt><dd>A term used to prefix informative remarks. This term is used exclusively in an informative context. (ITU)</dd>
+<dt>Object Clock Reference (OCR) </dt><dd>A clock reference that is used by a media object decoder to recover the encoder’s time base. See also Subclause 7.3.3. (ISO-1 Final Draft)</dd>
+<dt>Object Content Information (OCI) </dt><dd>Additional information about content conveyed through one or more elementary streams. It is either attached to to individual elementary stream descriptors or conveyed itself as an elementary stream. (ISO-1 Final Draft)</dd>
+<dt>Object Descriptor (OD) </dt><dd>A descriptor that associates one or more elementary streams by means of their elementary stream descriptors and defines their logical dependencies. (ISO-1 Final Draft)</dd>
+<dt>Object Descriptor Message </dt><dd>A message that identifies the action to be taken on a list of object descriptors or object descriptor IDs, e.g., update or remove. (ISO-1 Final Draft)</dd>
+<dt>Object Descriptor Stream </dt><dd>An elementary stream that conveys object descriptors encapsulated in object descriptor messages. (ISO-1 Final Draft)</dd>
+<dt>Object Time Base (OTB) </dt><dd>A time base valid for a given object, and hence for its media object decoder. The OTB is conveyed to the media object decoder via object clock references. All timestamps relating to this object’s decoding process refer to this time base. See also Subclause 7.3.2. (ISO-1 Final Draft)</dd>
+<dt>objective quality </dt><dd>Visual quality measured by algorithm(s) (HAVCS/HAMVC)</dd>
+<dt>OBMC </dt><dd>Overlapped Block Motion Compensation (HAMVC)</dd>
+<dt>OD(s)</dt><dd>Object Descriptor(s) (MPEG-4/PPT)</dd>
+<dt>ODF</dt><dd>Object Descriptor Framework; Object Description Framework (MPEG-4/PPT)</dd>
+<dt>ODS</dt><dd>Object Descriptor Stream (MPEG-4/PPT)</dd>
+<dt>opposite parity </dt><dd>The opposite parity of top is bottom, and vice versa. (ITU)</dd>
+<dt>output order </dt><dd>The order in which the decoded pictures are output from the decoded picture buffer. (ITU)</dd>
+<dt>P slice </dt><dd>A slice that is not an SP slice that may be decoded using intra prediction or inter prediction using at most one motion vector and reference index to predict the sample values of each block. (ITU)</dd>
+<dt>parameter </dt><dd>A syntax element of a sequence parameter set or a picture parameter set. Parameter is also used as part of the defined term quantisation parameter. (ITU)</dd>
+<dt>Parametric Audio Decoder </dt><dd>A set of tools for representing and decoding audio (speech) signals coded at bit rates between 2 Kbps and 6 Kbps, according to Part 3 of this Final Committee Draft of International Standard. (ISO-1 Final Draft)</dd>
+<dt>parity </dt><dd>The parity of a field can be top or bottom. (ITU)</dd>
+<dt>partitioning </dt><dd>The division of a set into subsets such that each element of the set is in exactly one of the subsets. (ITU)</dd>
+<dt>PBR</dt><dd>Probability-Based Reconstruction (UHD/VLSI)</dd>
+<dt>PD</dt><dd>Preliminary Decision (UHD/VLSI)</dd>
+<dt>PE(s)</dt><dd>Processing Element(s) (UHD/VLSI)</dd>
+<dt>PG</dt><dd>Prediction Generator (UHD/VLSI)</dd>
+<dt>picture </dt><dd>A collective term for a field or a frame. (ITU)</dd>
+<dt>Picture (coded) </dt><dd>Coded (compressed) video frame (HAVCS/HAMVC)</dd>
+<dt>picture order count </dt><dd>A variable that is associated with each coded field and each field of a coded frame and has a value that is non-decreasing with increasing field position in output order relative to the first output field of the previous IDR picture in decoding order or relative to the first output field of the previous picture, in decoding order, that contains a memory management control operation that marks all reference pictures as "unused for reference". (ITU)</dd>
+<dt>picture parameter set </dt><dd>A syntax structure containing syntax elements that apply to zero or more entire coded pictures as determined by the pic_parameter_set_id syntax element found in each slice header. (ITU)</dd>
+<dt>PMD</dt><dd>Preliminary Mode Decision (UHD/VLSI)</dd>
+<dt>P-picture (slice) </dt><dd>Coded picture (or slice) using motion-compensated prediction from one reference frame  (HAVCS/HAMVC)</dd>
+<dt>prediction </dt><dd>An embodiment of the prediction process. (ITU)</dd>
+<dt>prediction process </dt><dd>The use of a predictor to provide an estimate of the sample value or data element currently being decoded. (ITU)</dd>
+<dt>predictive slice </dt><dd>See P slice. (ITU)</dd>
+<dt>predictor </dt><dd>A combination of specified values or previously decoded sample values or data elements used in the decoding process of subsequent sample values or data elements. (ITU)</dd>
+<dt>Presentation </dt><dd>One or more motion sequences (q.v.), possibly combined with audio.  (ISO-12)</dd>
+<dt>primary coded picture </dt><dd>The coded representation of a picture to be used by the decoding process for a bitstream conforming to this Recommendation | International Standard. The primary coded picture contains all macroblocks of the picture. The only pictures that have a normative effect on the decoding process are primary coded pictures. See also redundant coded picture. (ITU)</dd>
+<dt>profile </dt><dd>A set of functional capabilities (of a video CODEC) (HAVCS/HAMVC)</dd>
+<dt>profile </dt><dd>A specified subset of the syntax of this Recommendation | International Standard. (ITU)</dd>
+<dt>progressive (video) </dt><dd>Video data represented as a series of complete frames (HAVCS/HAMVC)</dd>
+<dt>PSNR</dt><dd>Peak Signal-to-Noise Ratio (UHD/VLSI)</dd>
+<dt>PSNR </dt><dd>Peak Signal to Noise Ratio, an objective quality measure (HAVCS/HAMVC)</dd>
+<dt>QCIF </dt><dd>Quarter Common Intermediate Format (HAVCS/HAMVC)</dd>
+<dt>QP</dt><dd>Quantization Parameter (UHD/VLSI)</dd>
+<dt>Quality of Service (QoS) </dt><dd>The performance that an elementary stream requests from the delivery channel through which it is transported, characterized by a set of parameters (e.g., bit rate, delay jitter, bit error rate). (ISO-1 Final Draft)</dd>
+<dt>quantisation parameter </dt><dd>A variable used by the decoding process for scaling of transform coefficient levels. (ITU)</dd>
+<dt>quantise </dt><dd>Reduce the precision of a scalar or vector quantity (HAMVC/HAVCS)</dd>
+<dt>Random Access </dt><dd>The process of beginning to read and decode a coded representation at an arbitrary point. (ISO-1 Final Draft)</dd>
+<dt>random access </dt><dd>The act of starting the decoding process for a bitstream at a point other than the beginning of the stream. (ITU)</dd>
+<dt>raster scan </dt><dd>A mapping of a rectangular two-dimensional pattern to a one-dimensional pattern such that the first entries in the one-dimensional pattern are from the first top row of the two-dimensional pattern scanned from left to right, followed similarly by the second, third, etc., rows of the pattern (going down) each scanned from left to right. (ITU)</dd>
+<dt>rate control </dt><dd>Control of bit rate of encoded video signal (HAVCS/HAMVC)</dd>
+<dt>rate-distortion </dt><dd>Measure of CODEC performance (distortion at a range of coded bit rates) (HAVCS/HAMVC)</dd>
+<dt>raw byte sequence payload (RBSP) </dt><dd>A syntax structure containing an integer number of bytes that is encapsulated in a NAL unit. An RBSP is either empty or has the form of a string of data bits containing syntax elements followed by an RBSP stop bit and followed by zero or more subsequent bits equal to 0. (ITU)</dd>
+<dt>raw byte sequence payload (RBSP) stop bit </dt><dd>A bit equal to 1 present within a raw byte sequence payload (RBSP) after a string of data bits. The location of the end of the string of data bits within an RBSP can be identified by searching from the end of the RBSP for the RBSP stop bit, which is the last non-zero bit in the RBSP. (ITU)</dd>
+<dt>RBSP </dt><dd>Raw Byte Sequence Payload (HAVCS/HAMVC/ITU)</dd>
+<dt>RDF</dt><dd>Reference Data First (UHD/VLSI)</dd>
+<dt>RDO</dt><dd>Rate Distortion Optimization (UHD/VLSI)</dd>
+<dt>REC</dt><dd>Reconstruction (UHD/VLSI)</dd>
+<dt>recovery point </dt><dd>A point in the bitstream at which the recovery of an exact or an approximate representation of the decoded pictures represented by the bitstream is achieved after a random access or broken link. (ITU)</dd>
+<dt>redundant coded picture </dt><dd>A coded representation of a picture or a part of a picture. The content of a redundant coded picture shall not be used by the decoding process for a bitstream conforming to this Recommendation | International Standard. A redundant coded picture is not required to contain all macroblocks in the primary coded picture. Redundant coded pictures have no normative effect on the decoding process. See also primary coded picture. (ITU)</dd>
+<dt>reference field </dt><dd>A reference field may be used for inter prediction when P, SP, and B slices of a coded field or field macroblocks of a coded frame are decoded. See also reference picture. (ITU)</dd>
+<dt>reference frame </dt><dd>A reference frame may be used for inter prediction when P, SP, and B slices of a coded frame are decoded. See also reference picture. (ITU)</dd>
+<dt>reference index </dt><dd>An index into a reference picture list. (ITU)</dd>
+<dt>reference picture </dt><dd>A picture with nal_ref_idc not equal to 0. A reference picture contains samples that may be used for inter prediction in the decoding process of subsequent pictures in decoding order. (ITU)</dd>
+<dt>reference picture list </dt><dd>A list of reference pictures that is used for inter prediction of a P, B, or SP slice. For the decoding process of a P or SP slice, there is one reference picture list. For the decoding process of a B slice, there are two reference picture lists. (ITU)</dd>
+<dt>reference picture list 0 </dt><dd>A reference picture list used for inter prediction of a P, B, or SP slice. All inter prediction used for P and SP slices uses reference picture list 0. Reference picture list 0 is one of two reference picture lists used for inter prediction for a B slice, with the other being reference picture list 1. (ITU)</dd>
+<dt>reference picture list 1 </dt><dd>A reference picture list used for inter prediction of a B slice. Reference picture list 1 is one of two reference picture lists used for inter prediction for a B slice, with the other being reference picture list 0. (ITU)</dd>
+<dt>reference picture marking </dt><dd>Specifies, in the bitstream, how the decoded pictures are marked for inter prediction. (ITU)</dd>
+<dt>Reference Point </dt><dd>A location in the data or control flow of a system that has some defined characteristics. (ISO-1 Final Draft)</dd>
+<dt>Rendering </dt><dd>The action of transforming a scene description and its media objects from a common representation space to a specific presentation device (i.e., speakers and a viewing window). (ISO-1 Final Draft)</dd>
+<dt>Rendering Area </dt><dd>The portion of the display device’s screen into which the scene description and its media objects are to be rendered. (ISO-1 Final Draft)</dd>
+<dt>reserved </dt><dd>The term reserved, when used in the clauses specifying some values of a particular syntax element, are for future use by ITU-T | ISO/IEC. These values shall not be used in bitstreams conforming to this Recommendation | International Standard, but may be used in future extensions of this Recommendation | International Standard by ITU-T | ISO/IEC. (ITU)</dd>
+<dt>residual </dt><dd>The decoded difference between a prediction of a sample or data element and its decoded value. (ITU)</dd>
+<dt>RGB </dt><dd>Red/Green/Blue colour space  (HAVCS/HAMVC)</dd>
+<dt>ringing (artefacts) </dt><dd>‘Ripple’-like artefacts around sharp edges in a decoded image (HAVCS/HAMVC)</dd>
+<dt>R-MB</dt><dd>Right Macroblock (UHD/VLSI)</dd>
+<dt>RTP </dt><dd>Real Time Protocol, a transport protocol for real-time data (HAVCS/HAMVC)</dd>
+<dt>run </dt><dd>A number of consecutive data elements represented in the decoding process. In one context, the number of zero-valued transform coefficient levels preceding a non-zero transform coefficient level in the list of transform coefficient levels generated by a zig-zag scan or a field scan. In other contexts, run refers to a number of macroblocks. (ITU)</dd>
+<dt>RVC </dt><dd>Reconfigurable Video Coding, a framework for video coding in which a decoder may be constructed from pre-defined Functional Units. (HAVCS)</dd>
+<dt>RVLC </dt><dd>Reversible Variable Length Code (HAMVC)</dd>
+<dt>SAD</dt><dd>Sum of Absolute Difference (UHD/VLSI)</dd>
+<dt>Sample </dt><dd>In non-hint tracks, a sample is an individual frame of video, a time-contiguous series of video frames, or a time-contiguous compressed section of audio. In hint tracks, a sample defines the formation of one or more streaming packets. No two samples within a track may share the same time-stamp. (ISO-12)</dd>
+<dt>sample aspect ratio </dt><dd>Specifies, for assisting the display process, which is not specified in this Recommendation | International Standard, the ratio between the intended horizontal distance between the columns and the intended vertical distance between the rows of the luma sample array in a frame. Sample aspect ratio is expressed as h:v, where h is horizontal width and v is vertical height (in arbitrary units of spatial distance). (ITU)</dd>
+<dt>Sample Description </dt><dd>A structure which defines and describes the format of some number of samples in a track. (ISO-12)</dd>
+<dt>Sample Table </dt><dd>A packed directory for the timing and physical layout of the samples in a track. (ISO-12)</dd>
+<dt>SATD</dt><dd>Sum of Absolute Transform Difference (UHD/VLSI)</dd>
+<dt>SBR</dt><dd>Spectral Band Replication (TJ/HEAAC)</dd>
+<dt>scalable coding </dt><dd>Coding a signal into a number of layers (HAVCS/HAMVC)</dd>
+<dt>scaling </dt><dd>The process of multiplying transform coefficient levels by a factor, resulting in transform coefficients. (ITU)</dd>
+<dt>Scene Description </dt><dd>Information that describes the spatio-temporal positioning of media objects as well as their behavior resulting from object and user interactions. (ISO-1 Final Draft)</dd>
+<dt>Scene Description Profile </dt><dd>A profile that defines the permissible set of scene description elements that may be used in a scene description stream. (ISO-1 Final Draft)</dd>
+<dt>Scene Description Stream </dt><dd>An elementary stream that conveys BIFS scene description information as specified in Subclause 9.2.12. (ISO-1 Final Draft)</dd>
+<dt>SDL</dt><dd>Syntactic Description Language </dd>
+<dt>SDM</dt><dd>System Decoder Model (MPEG-4/PPT)</dd>
+<dt>SDP</dt><dd>Service Delivery Platform  (WIKIP)</dd>
+<dt>SEI </dt><dd>Supplemental Enhancement Information (ITU)</dd>
+<dt>sequence parameter set </dt><dd>A syntax structure containing syntax elements that apply to zero or more entire coded video sequences as determined by the content of a seq_parameter_set_id syntax element found in the picture parameter set referred to by the pic_parameter_set_id syntax element found in each slice header. (ITU)</dd>
+<dt>Session </dt><dd>The (possibly interactive) communication of the coded representation of an audiovisual scene between two terminals. A unidirectional session corresponds to a single program in a broadcast application. (ISO-1 Final Draft)</dd>
+<dt>SG</dt><dd>Shot Boundary </dd>
+<dt>shall </dt><dd>A term used to express mandatory requirements for conformance to this Recommendation | International Standard. When used to express a mandatory constraint on the values of syntax elements or on the results obtained by operation of the specified decoding process, it is the responsibility of the encoder to ensure that the constraint is fulfilled. When used in reference to operations performed by the decoding process, any decoding process that produces identical results to the decoding process described herein conforms to the decoding process requirements of this Recommendation | International Standard. (ITU)</dd>
+<dt>should </dt><dd>A term used to refer to behaviour of an implementation that is encouraged to be followed under anticipated ordinary circumstances, but is not a mandatory requirement for conformance to this Recommendation | International Standard. (ITU)</dd>
+<dt>SI</dt><dd>Straightforward Implementation (UHD/VLSI)</dd>
+<dt>SI slice </dt><dd>Intra-coded slice used for switching between coded bitstreams (H.264) (HAVCS/HAMVC)</dd>
+<dt>SI slice </dt><dd>A slice that is coded using intra prediction only and using quantisation of the prediction samples. An SI slice can be coded such that its decoded samples can be constructed identically to an SP slice. (ITU)</dd>
+<dt>skipped macroblock </dt><dd>A macroblock for which no data is coded other than an indication that the macroblock is to be decoded as "skipped". This indication may be common to several macroblocks. (ITU)</dd>
+<dt>SL</dt><dd>Sync Layer (MPEG-4/PPT)</dd>
+<dt>slice </dt><dd>A region of a coded picture (HAVCS/HAMVC)</dd>
+<dt>slice </dt><dd>An integer number of macroblocks or macroblock pairs ordered consecutively in the raster scan within a particular slice group. For the primary coded picture, the division of each slice group into slices is a partitioning. Although a slice contains macroblocks or macroblock pairs that are consecutive in the raster scan within a slice group, these macroblocks or macroblock pairs are not necessarily consecutive in the raster scan within the picture. The macroblock addresses are derived from the first macroblock address in a slice (as represented in the slice header) and the macroblock to slice group map, and, when a picture is coded using three separate colour planes, a colour plane identifier. (ITU)</dd>
+<dt>slice data partition </dt><dd>A non-empty subset of the syntax elements of the slice data syntax structure for a slice. The syntax elements of a slice data partition are associated with the same category. (ITU)</dd>
+<dt>slice data partitioning </dt><dd>A method of partitioning selected syntax elements into syntax structures based on a category associated with each syntax element. (ITU)</dd>
+<dt>slice group </dt><dd>A subset of the macroblocks or macroblock pairs of a picture. The division of the picture into slice groups is a partitioning of the picture. The partitioning is specified by the macroblock to slice group map. (ITU)</dd>
+<dt>slice group map units </dt><dd>The units of the map unit to slice group map. (ITU)</dd>
+<dt>slice header </dt><dd>A part of a coded slice containing the data elements pertaining to the first or all macroblocks represented in the slice. (ITU)</dd>
+<dt>SL-Packetized Stream (SPS) </dt><dd>A sequence of SL-Packets that encapsulate one elementary stream. See also Subclause 7.2.2. (ISO-1 Final Draft)</dd>
+<dt>SNHC </dt><dd>Synthetic Natural Hybrid Coding (HAMVC)</dd>
+<dt>SODB </dt><dd>String Of Data Bits (ITU)</dd>
+<dt>source </dt><dd>Term used to describe the video material or some of its attributes before encoding. (ITU)</dd>
+<dt>SP slice </dt><dd>Inter-coded slice used for switching between coded bitstreams (H.264) (HAVCS/HAMVC)</dd>
+<dt>SP slice </dt><dd>A slice that may be coded using intra prediction or inter prediction with quantisation of the prediction samples using at most one motion vector and reference index to predict the sample values of each block. An SP slice can be coded such that its decoded samples can be constructed identically to another SP slice or an SI slice. (ITU)</dd>
+<dt>sprite </dt><dd>Texture region that may be incorporated in a series of decoded frames (MPEG-4 Visual) (HAMVC)</dd>
+<dt>start code prefix </dt><dd>A unique sequence of three bytes equal to 0x000001 embedded in the byte stream as a prefix to each NAL unit. The location of a start code prefix can be used by a decoder to identify the beginning of a new NAL unit and the end of a previous NAL unit. Emulation of start code prefixes is prevented within NAL units by the inclusion of emulation prevention bytes. (ITU)</dd>
+<dt>statistical </dt><dd>Redundancy due to the statistical distribution of data redundancy (HAMVC)</dd>
+<dt>statistical redundancy </dt><dd>Redundancy due to the statistical distribution of data (HAVCS)</dd>
+<dt>Stream Multiplex Interface (SMI) </dt><dd>An interface modeling the exchange of SL-packetized stream data and associated control information between the sync layer and the TransMux layer. See also Subclause 7.2.1. (ISO-1 Final Draft)</dd>
+<dt>string of data bits (SODB) </dt><dd>A sequence of some number of bits representing syntax elements present within a raw byte sequence payload prior to the raw byte sequence payload stop bit. Within an SODB, the left-most bit is considered to be the first and most significant bit, and the right-most bit is considered to be the last and least significant bit. (ITU)</dd>
+<dt>Structured Audio </dt><dd>A method of describing synthetic sound effects and music. See Part 3 of this Final Committee Draft of International Standard. (ISO-1 Final Draft)</dd>
+<dt>studio quality </dt><dd>Lossless or near-lossless video quality (HAVCS/HAMVC)</dd>
+<dt>subjective quality </dt><dd>Visual quality as perceived by human observer(s) (HAVCS/HAMVC)</dd>
+<dt>subjective redundancy </dt><dd>Redundancy due to components of the data that are subjectively insignificant (HAVCS/HAMVC)</dd>
+<dt>sub-macroblock </dt><dd>One quarter of the samples of a macroblock, i.e., an 8x8 luma block and two corresponding chroma blocks of which one corner is located at a corner of the macroblock for a picture that has three sample arrays or an 8x8 luma block of which one corner is located at a corner of the macroblock for a monochrome picture or a picture that is coded using three separate colour planes. (ITU)</dd>
+<dt>sub-macroblock partition </dt><dd>A block of luma samples and two corresponding blocks of chroma samples resulting from a partitioning of a sub-macroblock for inter prediction for a picture that has three sample arrays or a block of luma samples resulting from a partitioning of a sub-macroblock for inter prediction for a monochrome picture or a picture that is coded using three separate colour planes. (ITU)</dd>
+<dt>sub-pixel (motion compensation) </dt><dd>Motion-compensated prediction from a reference area that may be formed by interpolating between integer-valued pixel positions (HAVCS/HAMVC)</dd>
+<dt>SVC </dt><dd>Scalable Video Coding (HAVCS/ITU)</dd>
+<dt>switching I slice </dt><dd>See SI slice. (ITU)</dd>
+<dt>switching P slice </dt><dd>See SP slice. (ITU)</dd>
+<dt>Sync Layer (SL) </dt><dd>A layer to adapt elementary stream data for communication across the Stream Multiplex Interface, providing timing and synchronization information, as well as fragmentation and random access information. The Sync Layer syntax is configurable and can also be empty. (ISO-1 Final Draft)</dd>
+<dt>Sync Layer Configuration </dt><dd>A configuration of the sync layer syntax for a particular elementary stream using information contained in its elementary stream descriptor. (ISO-1 Final Draft)</dd>
+<dt>Sync Layer Packet (SL-Packet) </dt><dd>The smallest data entity managed by the sync layer consisting of a configurable header and a payload. The payload may consist of one complete access unit or a partial access unit. (ISO-1 Final Draft)</dd>
+<dt>Syntactic Description Language (SDL) </dt><dd>A language defined by this specification that allows the description of a bitstream’s syntax. (ISO-1 Final Draft)</dd>
+<dt>syntax element </dt><dd>An element of data represented in the bitstream. (ITU)</dd>
+<dt>syntax structure </dt><dd>Zero or more syntax elements present together in the bitstream in a specified order. (ITU)</dd>
+<dt>System Time Base (STB) </dt><dd>The time base of the terminal. Its resolution is implementation-dependent. All operations in the terminal are performed according to this time base. See also Subclause 7.3.1. (ISO-1 Final Draft)</dd>
+<dt>Systems Decoder Model (SDM) </dt><dd>A model that provides an abstract view of the behavior of a terminal compliant to this specification. It consists of the Buffering Model, and the Timing Model. (ISO-1 Final Draft)</dd>
+<dt>Terminal </dt><dd>A system that receives and presents the coded representation of an interactive audiovisual scene as defined by this specification. It can be a standalone system, or part of an application system that supports presentation of content complying with this specification. (ISO-1 Final Draft)</dd>
+<dt>test model </dt><dd>A software model and document that describe a reference implementation of a video coding standard (HAVCS/HAMVC)</dd>
+<dt>texture </dt><dd>Image or residual data (HAVCS/HAMVC)</dd>
+<dt>tfra</dt><dd>Track Fragment Random Access (ISO-14)</dd>
+<dt>Time Base </dt><dd>The notion of a clock; it is equivalent to a counter that is periodically incremented. (ISO-1 Final Draft)</dd>
+<dt>Time Stamp </dt><dd>An indication of a particular time instant relative to a time base. (ISO-1 Final Draft)</dd>
+<dt>Timing Model </dt><dd>A model that specifies the semantic meaning of timing information, how it is incorporated (explicitly or implicitly) in the coded representation of information, and how it can be recovered at the terminal. (ISO-1 Final Draft)</dd>
+<dt>tkhd</dt><dd>Track Header (ISO-14)</dd>
+<dt>top field </dt><dd>One of two fields that comprise a frame. Each row of a top field is spatially located immediately above the corresponding row of the bottom field. (ITU)</dd>
+<dt>top macroblock (of a macroblock pair) </dt><dd>The macroblock within a macroblock pair that contains the samples in the top row of samples for the macroblock pair. For a field macroblock pair, the top macroblock represents the samples from the region of the top field of the frame that lie within the spatial region of the macroblock pair. For a frame macroblock pair, the top macroblock represents the samples of the frame that lie within the top half of the spatial region of the macroblock pair. (ITU)</dd>
+<dt>Track </dt><dd>A collection of related samples (q.v.) in an ISO base media file. For media data, a track corresponds to a sequence of images or sampled audio. For hint tracks, a track corresponds to a streaming channel. (ISO-12)</dd>
+<dt>traf</dt><dd>Track Fragment (ISO-14)</dd>
+<dt>trak</dt><dd>Track (ISO-14)</dd>
+<dt>transform coefficient </dt><dd>A scalar quantity, considered to be in a frequency domain, that is associated with a particular one-dimensional or two-dimensional frequency index in an inverse transform part of the decoding process. (ITU)</dd>
+<dt>transform coefficient level </dt><dd>An integer quantity representing the value associated with a particular two-dimensional frequency index in the decoding process prior to scaling for computation of a transform coefficient value. (ITU)</dd>
+<dt>TransMux </dt><dd>A generic abstraction for delivery mechanisms (computer networks, etc.) able to store or transmit a number of multiplexed elementary streams or FlexMux streams. This specification does not specify a TransMux layer. (ISO-1 Final Draft)</dd>
+<dt>trax</dt><dd>Track Extends (ISO-14)</dd>
+<dt>Tree-structured motion compensation </dt><dd>Motion compensation featuring a flexible hierarchy of partition sizes (H.264) (HAVCS/HAMVC)</dd>
+<dt>TSS </dt><dd>Three Step Search, a motion estimation algorithm (HAMVC)</dd>
+<dt>Universal Resource Locator </dt><dd>A unique identification of the location of an elementary stream or an object descriptor. (ISO-1 Final Draft)</dd>
+<dt>universal unique identifier (UUID) </dt><dd>An identifier that is unique with respect to the space of all universal unique identifiers. (ITU)</dd>
+<dt>unspecified </dt><dd>The term unspecified, when used in the clauses specifying some values of a particular syntax element, indicates that the values have no specified meaning in this Recommendation | International Standard and will not have a specified meaning in the future as an integral part of this Recommendation | International Standard. (ITU)</dd>
+<dt>UUID </dt><dd>Universal Unique Identifier (ITU)</dd>
+<dt>variable length coding (VLC) </dt><dd>A reversible procedure for entropy coding that assigns shorter bit strings to symbols expected to be more frequent and longer bit strings to symbols expected to be less frequent. (ITU)</dd>
+<dt>VBR </dt><dd>Variable Bit Rate (ITU)</dd>
+<dt>VCEG </dt><dd>Video Coding Experts Group, a committee of ITU (HAVCS/HAMVC)</dd>
+<dt>VCL</dt><dd>Video Coding Layer (HAVCS)</dd>
+<dt>VCL </dt><dd>Video Coding Layer (HAVCS/HAMVC/ITU)</dd>
+<dt>VCL NAL unit </dt><dd>A collective term for coded slice NAL units and coded slice data partition NAL units. (ITU)</dd>
+<dt>video packet </dt><dd>Coded unit suitable for packetization (HAVCS/HAMVC)</dd>
+<dt>VLC</dt><dd>Variable Length Code (or Coding) (HAVCS/HAMVC/ITU)</dd>
+<dt>VLD </dt><dd>Variable Length Decoder (HAVCS/HAMVC)</dd>
+<dt>VLE </dt><dd>Variable Length Encoder (HAVCS/HAMVC)</dd>
+<dt>VLSI </dt><dd>Very Large Scale Integrated circuit (HAVCS/HAMVC)</dd>
+<dt>VO </dt><dd>Video Object (HAMVC)</dd>
+<dt>VOP </dt><dd>Video Object Plane (HAMVC)</dd>
+<dt>VQEG </dt><dd>Video Quality Experts Group (HAVCS/HAMVC)</dd>
+<dt>VRML</dt><dd>Virtual Reality Markup Language (MPEG-4/PPT)</dd>
+<dt>VSN </dt><dd>Video Sensor Network </dd>
+<dt>VUI </dt><dd>Video Usability Information (ITU)</dd>
+<dt>weighted prediction </dt><dd>Motion compensation in which the prediction samples from two references are scaled (HAVCS/HAMVC)</dd>
+<dt>YCbCr </dt><dd>Luminance, Blue chrominance, Red chrominance colour space (HAMVC)</dd>
+<dt>YCrCb </dt><dd>Luminance/Red chrominance/Blue chrominance colour space (HAVCS)</dd>
+<dt>YUV </dt><dd>A colour space (see YCbCr) (HAMVC)</dd>
+<dt>zig-zag scan </dt><dd>A specific sequential ordering of transform coefficient levels from (approximately) the lowest spatial frequency to the highest. Zig-zag scan is used for transform coefficient levels in frame macroblocks. (ITU)</dd>
+</dl>
+</fieldset>
+
+<br/>
+<br/>
+
+<fieldset>
+	<legend>Sources</legend>
+<dl>
+<dt>HAVCS</dt><dd>The H.264 Advanced Video Compression Standard (by Iain Richardson)</dd>
+<dt>HAMVC</dt><dd>H.264 and MPEG-4 Video Compression (by Iain Richardson)</dd>
+<dt>ITU</dt><dd>T-REC-H.264-201003-S!!PDF-E.pdf (ITU-T, H.264)</dd> 
+<dt>ISO-1 Final Draft</dt><dd>ISO_IEC_14496-01_2001</dd>
+<dt>ISO-2</dt><dd>ISO_IEC_14496-02_2001_MPEG4_Visual</dd>
+<dt>ISO-3</dt><dd>ISO_IEC_14496-03_2001</dd>
+<dt>ISO-12</dt><dd>ISO_IEC_14496-12_2004(E)</dd>
+<dt>ISO-14</dt><dd>ISO_IEC_14496-14_2003-11-15</dd>
+<dt>MPEG-4/PPT</dt><dd>MPEG-4-WWW</dd>
+<dt>MSDB</dt><dd>Multiple-Screen Delivery Book (by Jan Ozer)</dd>
+<dt>UHD/VLSI</dt><dd>tvlsi-2014-High-Performance H.264_AVC Intra-Prediction Architecture for Ultra High Definition Video Applications</dd>
+<dt>WIKIP</dt><dd>Wikipedia.org</dd>
+</dl>
+</fieldset>
+</body>
+</html>
